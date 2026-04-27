@@ -5,7 +5,7 @@ export default function SkyBreak() {
       className="relative w-full h-[280px] md:h-[360px] overflow-hidden bg-brand-deep"
     >
       <img
-        src="/hdb-banner.jpg"
+        src={`${import.meta.env.BASE_URL}hdb-banner.jpg`}
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         loading="lazy"

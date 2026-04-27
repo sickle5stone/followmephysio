@@ -23,7 +23,7 @@ export default function AboutDodo() {
           <figure className="relative">
             <div className="relative overflow-hidden rounded-md shadow-card aspect-[4/5] bg-canvas">
               <img
-                src="/patient-home.jpg"
+                src={`${import.meta.env.BASE_URL}patient-home.jpg`}
                 alt="A senior patient practising arm-raise rehab in their Singapore HDB living room"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"

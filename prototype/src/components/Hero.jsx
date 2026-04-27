@@ -67,7 +67,7 @@ export default function Hero() {
             <figure className="relative">
               <div className="relative overflow-hidden rounded-md shadow-lift bg-brand-deep aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5]">
                 <img
-                  src="/dora-studio.jpg"
+                  src={`${import.meta.env.BASE_URL}dora-studio.jpg`}
                   alt="Dr. Dora at her Singapore studio — sunlit window, mid-stretch on the mat"
                   className="absolute inset-0 w-full h-full object-cover object-[center_45%]"
                   loading="eager"
