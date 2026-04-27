@@ -27,17 +27,17 @@ export default function Journey() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14">
           {steps.map((step, i) => (
-            <div key={step.title} className="relative pt-14 isolate">
+            <div key={step.title} className="relative pt-24">
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute top-0 left-0 z-0 font-display text-[88px] leading-none text-gold tracking-tightest select-none"
+                className="pointer-events-none absolute top-0 left-0 font-display text-[88px] leading-none text-gold tracking-tightest select-none"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="relative z-10 font-display text-[26px] tracking-tight text-ink-primary mb-4">
+              <h3 className="font-display text-[26px] tracking-tight text-ink-primary mb-4">
                 {step.title}
               </h3>
-              <p className="relative z-10 text-[15px] text-ink-secondary leading-relaxed">
+              <p className="text-[15px] text-ink-secondary leading-relaxed">
                 {step.body}
               </p>
             </div>
