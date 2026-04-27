@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   Theme tokens
+   v1 = original cream/sage clinical-warm palette
+   v2 = vibrant teal+coral palette (per design.md)
+   Switched at runtime via [data-theme] on <html>
+   ========================================================= */
+
+:root,
+[data-theme="v1"] {
+  /* Brand */
+  --brand:        #1B6A8F;
+  --brand-dark:   #14556F;
+  --brand-deep:   #0F3F54;
+  --brand-light:  #D4EAF5;
+  --brand-tint:   #EEF6FB;
+
+  /* Accent (v1 = restrained gold) */
+  --accent:       #B47B05;
+  --accent-deep:  #8B5F03;
+  --accent-warm:  #D4960A;
+  --accent-mint:  #6FA88F;
+
+  /* Gold (legacy alias for existing components) */
+  --gold:         #B47B05;
+  --gold-soft:    #D4960A;
+  --gold-light:   #FEF3D6;
+
+  /* Ink */
+  --ink-primary:   #3D2B1F;
+  --ink-secondary: #5B4A3F;
+  --ink-tertiary:  #8C7B72;
+  --ink-muted:     #C4B8B2;
+
+  /* Canvas */
+  --canvas:       #F5F0EA;
+  --canvas-warm:  #EFE8DF;
+  --canvas-card:  #FFFFFF;
+
+  /* Borders (used by border-hairline utilities) */
+  --hairline:        rgba(61, 43, 31, 0.08);
+  --hairline-strong: rgba(61, 43, 31, 0.12);
+
+  /* Shadows */
+  --shadow-card:  0 1px 3px rgba(61,43,31,0.06), 0 4px 16px rgba(61,43,31,0.04);
+  --shadow-lift:  0 2px 8px rgba(61,43,31,0.08), 0 12px 32px rgba(61,43,31,0.06);
+  --shadow-inset: inset 0 1px 2px rgba(61,43,31,0.04);
+}
+
+[data-theme="v2"] {
+  /* Brand — anchored to rgb(27 106 143) */
+  --brand:        #1B6A8F;
+  --brand-dark:   #14556F;
+  --brand-deep:   #0F3F54;
+  --brand-light:  #D4EAF5;
+  --brand-tint:   #EEF6FB;
+
+  /* Accent — vibrant coral (per design.md §1.2) */
+  --accent:       #E85A4F;
+  --accent-deep:  #B8392E;
+  --accent-warm:  #F4A52A;
+  --accent-mint:  #3FB8A0;
+
+  /* Keep gold tokens mapped for any legacy use, biased toward accent */
+  --gold:         #F4A52A;
+  --gold-soft:    #F7B84D;
+  --gold-light:   #FFF4DD;
+
+  /* Ink — cooler, higher contrast for AAA readability */
+  --ink-primary:   #0B2230;
+  --ink-secondary: #42596A;
+  --ink-tertiary:  #7A8A95;
+  --ink-muted:     #B8C3CA;
+
+  /* Canvas — cool tinted whites */
+  --canvas:       #FAFCFD;
+  --canvas-warm:  #F4F9FC;
+  --canvas-card:  #FFFFFF;
+
+  /* Borders */
+  --hairline:        rgba(11, 34, 48, 0.08);
+  --hairline-strong: rgba(11, 34, 48, 0.14);
+
+  /* Shadows — cooler base */
+  --shadow-card:  0 1px 2px rgba(11,34,48,0.04), 0 1px 3px rgba(11,34,48,0.06);
+  --shadow-lift:  0 2px 8px rgba(11,34,48,0.06), 0 8px 24px rgba(11,34,48,0.04);
+  --shadow-inset: inset 0 1px 2px rgba(11,34,48,0.04);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: var(--canvas);
+    color: var(--ink-primary);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+  ::selection {
+    background-color: var(--brand);
+    color: #ffffff;
+  }
+
+  /* v2 readability lift: 18px body floor, slightly heavier weight, looser leading.
+     Scoped to v2 so v1 stays pixel-identical to its current look. */
+  [data-theme="v2"] body {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 450;
+  }
+}
+
+@layer utilities {
+  .border-hairline {
+    border-color: var(--hairline);
+  }
+  .border-hairline-strong {
+    border-color: var(--hairline-strong);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-display {
+    font-feature-settings: "ss01", "ss02";
+    font-variation-settings: "SOFT" 30, "WONK" 0;
+  }
+}

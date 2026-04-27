@@ -1,0 +1,596 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>followme physiotherapy — More good years</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#efe7d9",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed": "#261a00",
+              "inverse-on-surface": "#f8f0e2",
+              "on-surface-variant": "#57423d",
+              "surface-variant": "#e9e2d4",
+              "surface-bright": "#fff8f0",
+              "on-background": "#1e1b13",
+              secondary: "#7a5738",
+              "inverse-primary": "#ffb4a5",
+              "on-surface": "#1e1b13",
+              "inverse-surface": "#343027",
+              "tertiary-fixed-dim": "#ebc166",
+              "surface-tint": "#a63925",
+              "primary-container": "#b84630",
+              "on-error-container": "#93000a",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#2d1600",
+              "on-secondary-container": "#795637",
+              "on-primary-fixed-variant": "#862210",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed-dim": "#ebbe98",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#f5eddf",
+              surface: "#fff8f0",
+              outline: "#8b716c",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#fbf3e5",
+              "surface-dim": "#e1d9cc",
+              "on-tertiary-fixed-variant": "#5c4300",
+              "secondary-container": "#fdcea7",
+              tertiary: "#6b4f00",
+              "primary-fixed-dim": "#ffb4a5",
+              "tertiary-fixed": "#ffdea0",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#ffebc9",
+              error: "#ba1a1a",
+              "surface-container-highest": "#e9e2d4",
+              "on-secondary-fixed-variant": "#5f4023",
+              "outline-variant": "#dfc0b9",
+              background: "#fff8f0",
+              "primary-fixed": "#ffdad3",
+              primary: "#972e1b",
+              "tertiary-container": "#886612",
+              "on-primary-container": "#ffe9e4",
+              "on-primary-fixed": "#3e0400",
+              "secondary-fixed": "#ffdcc1",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              display: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-serif {
+        font-family: "Noto Serif", serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface">
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full h-[72px] z-50 bg-[#fff8f0]/80 backdrop-blur-lg flex items-center"
+    >
+      <div
+        class="flex justify-between items-center w-full px-12 mx-auto max-w-screen-2xl"
+      >
+        <div
+          class="text-2xl font-serif text-[#7a5738] flex flex-col leading-none"
+        >
+          <span>followme</span>
+          <span class="text-[10px] uppercase tracking-[0.3em] font-sans mt-1"
+            >physiotherapy</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-12">
+          <a
+            class="text-stone-900 border-b border-[#972e1b] pb-0.5 font-sans text-sm uppercase tracking-widest transition-colors duration-300"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-stone-500 font-sans text-sm uppercase tracking-widest hover:text-[#972e1b] transition-colors duration-300"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-stone-500 font-sans text-sm uppercase tracking-widest hover:text-[#972e1b] transition-colors duration-300"
+            href="#"
+            >The Work</a
+          >
+          <a
+            class="text-stone-500 font-sans text-sm uppercase tracking-widest hover:text-[#972e1b] transition-colors duration-300"
+            href="#"
+            >Conditions</a
+          >
+          <a
+            class="text-stone-500 font-sans text-sm uppercase tracking-widest hover:text-[#972e1b] transition-colors duration-300"
+            href="#"
+            >Notes</a
+          >
+        </div>
+        <a
+          class="text-[#972e1b] font-serif tracking-tight scale-95 active:scale-100 transition-transform"
+          href="#"
+          >WhatsApp Dodo →</a
+        >
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="pt-[72px] min-h-screen flex flex-col md:flex-row">
+      <div
+        class="md:w-[58%] h-[614px] md:h-screen relative overflow-hidden bg-surface-container"
+      >
+        <img
+          class="w-full h-full object-cover"
+          data-alt="sunlit Singapore HDB living room with a vintage teak armchair, a soft knitted blanket draped over the side, and a steaming tea cup on a small side table"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8rWSFMhJ0lOziOMq8tJizs8RTpO_iclpjlaU3xlpjuugmmzadOPcpJfTygFTUPxz9N9eczBYNdiBWHojerc417rSzaSIhWnkhHeJFpk7mDTRm1OtF0Q_toKqBGJd1Cs3GoLlct83RV7PV5N2RAEthgNX34fTqoxwneLkqkCu4sR2pHmptB7gOkTkSM2BgXjNMhswZ6vYjRQ_RlYRd_odYquD_rPvpqAkPKUhyNd-dNkwmSbP1C_0RETgGp5UlGNRUtJBs1Q8CTe4"
+        />
+      </div>
+      <div class="md:w-[42%] bg-surface flex items-center px-12 md:px-24 py-20">
+        <div class="max-w-md">
+          <span class="font-serif text-3xl text-secondary mb-6 block"
+            >跟我走</span
+          >
+          <h1
+            class="font-display text-5xl md:text-7xl leading-[1.1] text-on-surface mb-12"
+          >
+            More good years <br />
+            with the people <br />
+            <span class="relative inline-block">
+              you love.
+              <span
+                class="absolute -bottom-2 left-0 w-full h-1.5 bg-tertiary-fixed opacity-60"
+              ></span>
+            </span>
+          </h1>
+          <button
+            class="bg-primary text-on-primary px-10 py-5 rounded-md text-sm font-medium tracking-widest uppercase hover:bg-primary-container transition-colors shadow-sm"
+          >
+            WhatsApp Dodo
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Section 2: The Work (Object-led Grid) -->
+    <section class="py-32 px-12 bg-surface">
+      <div class="max-w-screen-2xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-baseline mb-20 gap-8"
+        >
+          <h2 class="font-display text-4xl text-on-surface">The Work</h2>
+          <p
+            class="font-body text-lg text-secondary max-w-lg leading-relaxed italic"
+          >
+            The places where recovery happens are the places where life happens.
+            We focus on the quiet corners and the daily motions.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="group cursor-pointer">
+            <div
+              class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low"
+            >
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="close-up of a sturdy polished wooden stair handrail in a warm sunlit hallway, emphasizing grip and stability"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYGE-8YvVy-5B8wlxyCa0Y_RE0bbgy7qIRdUtTf5Rs6p-ZwEfW0-GSJ0jKgmF266vnYAhTSxhtEJk118y6s0FBqvFs_iWw2LTXr6KqKdp6_FM32QPNurqljzscrTGGorYDWYTEs_FiNpmeclrh4HYdsDsiFQniBdIE_T5pJ9FxAYSBBORX-ikQbrZGrx401_JqXUuWObaoj0hYpWDudEe-4P0vPc8p5vKIFY34Mo5OgvB2bZOskseno2a3kjY6ScuIyy-vQDrBpyk"
+              />
+            </div>
+            <p class="font-serif italic text-xl text-on-surface">
+              Confidence in the ascent.
+            </p>
+          </div>
+          <div class="group cursor-pointer translate-y-12">
+            <div
+              class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low"
+            >
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="a quiet bedroom corner with a neatly made bed and a soft cashmere throw, soft window light creating long shadows"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb-N_l9xZJd_9SADGlSRcF6imPGg-rj73CaWvQRWoUhd6PZ-4AeF6ircfVNgUVit6nkC5A0bQVGLSmY-aXgFduE_jlmRjE5mVd_eZ5ZY5WsH0EwxtgfIUKuus-THT3CKrMGTirq0F4w4s9ewMxZ1DXEn8MrcvJHkmTqGhV15JxCR0TTbS6zfltSeOQpwgob4hUpLFrhkME3UY1TCa4Wr3RoKhYd7jGT63OpsRrZt4_rtXnUcC8AUh5wtsIfqpyQHLaay66vMUYoJk"
+              />
+            </div>
+            <p class="font-serif italic text-xl text-on-surface">
+              The ritual of rest.
+            </p>
+          </div>
+          <div class="group cursor-pointer">
+            <div
+              class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low"
+            >
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="a handcrafted wooden walking stick leaning gently against a warm white wall next to a pair of simple leather indoor slippers"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-vsni48L2XC9KYMS9t3qrUyoCLitK5WpceacKZfAy44z2S-rjSG9ZTXb39pBmDxYm2kdhwBQLKQmBAh0ImfVr472T9p96E43jVwmVMcLLTzSLmtYjtVnuS0zuz7NduLSq0S7NRUs3HzV74crxt8BlV-9dpCbUMxV--30A-68V_CSdLsGWNr8AQhAXHVU-EnyD6hcTnNQ-Wdu8RcRVoCWWIItJvJ8Iwl26Vd5gPw_GtGQ6aqXnpUyKO60pczJyMydLD-D8g3F99pY"
+              />
+            </div>
+            <p class="font-serif italic text-xl text-on-surface">
+              Stability on your terms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 3: About Dodo -->
+    <section class="bg-[#ece3d0] py-32 px-12">
+      <div
+        class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-20 items-center"
+      >
+        <div class="md:w-1/2">
+          <div class="relative">
+            <img
+              class="w-full aspect-square object-cover grayscale brightness-110 contrast-90"
+              data-alt="Portrait of Dodo Wee, an Asian woman in her 30s with short dark hair, wearing a neutral linen shirt, smiling gently in a sunlit warm domestic kitchen"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYHv2w3zkhztEpns8Xcb07bLW20ICXLZZ3RCcMzIHfZKwM2m76ShkGwzHbMP3SBBwaVYmEMHM7jkOtxAaL2onKwb8kVKDKbpv2WyKNnjcp8jCREW2hzOrAup4DI0YD-u7fC0WNbKdMQ7Sn-HTlU3uhLM6AG_8QVky1fWbq24GKfoYQrmMwz3Vio9vKMoqIVchYCT3p1IfY4bFeXUhEiV2FDSO_er13G3PiJlzgt0AZk75svdxzw9neYD5cN_H8_WrJf8Z6Mg09WOc"
+            />
+            <div
+              class="absolute -bottom-8 -right-8 bg-surface-bright p-8 max-w-xs shadow-sm"
+            >
+              <p
+                class="font-body text-sm leading-relaxed text-secondary italic"
+              >
+                "Your home isn't a clinic. It is a sanctuary of memories. My
+                work is to ensure those memories continue being made."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="font-display text-4xl mb-8 text-on-surface">About Dodo</h2>
+          <div
+            class="space-y-6 font-body text-lg leading-relaxed text-on-surface-variant"
+          >
+            <p>
+              I am Dodo Wee, a physiotherapist who believes that true healing
+              happens where we feel most at home. After years in hospital wards,
+              I realized that clinical excellence is only half the journey—the
+              other half is the environment you return to.
+            </p>
+            <p>
+              My approach is deeply personal and domestic. We don't just
+              "exercise"; we practice the movements that matter to you. Whether
+              it's reaching for the favorite tea tin or walking down to the
+              market, we build strength into the fabric of your day.
+            </p>
+          </div>
+          <div class="mt-12 pt-12 border-t border-outline-variant/30 space-y-4">
+            <div class="flex justify-between items-center group">
+              <span
+                class="font-label text-sm uppercase tracking-widest text-secondary"
+                >Clinical Credentials</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </div>
+            <div class="h-px bg-outline-variant/20"></div>
+            <div class="flex justify-between items-center group">
+              <span
+                class="font-label text-sm uppercase tracking-widest text-secondary"
+                >Specialist Geriatric Care</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </div>
+            <div class="h-px bg-outline-variant/20"></div>
+            <div class="flex justify-between items-center group">
+              <span
+                class="font-label text-sm uppercase tracking-widest text-secondary"
+                >Hospice &amp; Palliative Focus</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4: What I Work With (4x2 Grid) -->
+    <section class="py-32 px-12 bg-surface">
+      <div class="max-w-screen-2xl mx-auto">
+        <h2 class="font-display text-4xl mb-20 text-center">Areas of Care</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+          <!-- Item 1 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="close-up of an elegant brass grab-rail mounted on a soft-textured ivory wall"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv8nwTbrFDd7dLDOI8ZfhNFgfIdW-Zi_lLV2WICj3h6h5ia0iLEOc-vCbBacuh2bblDiGno8ExNJxVaODWOT32Er7fStd-zaDB66JO77ObTEiGFVgm-Uuai9Xl0AznNycJtbQdQOlUnzBba-_vYbJBF6QSPctTSc0ecDL0F1KG9vgaJaRkpnOabyophEYTUVd1CX6lg3oRV4OOhAmSILWQUxM0z5djydgopEHxBCmFyslJx4-ASAv7RNhKZ1-Ck9SboRydvYrh_is"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">Fall Prevention</h3>
+          </div>
+          <!-- Item 2 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="a delicate ceramic teacup resting on a wooden tray with steam rising gently"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBAaQKv_qx2p2eSTXiFi4YIAivyP6-t0nNxMOuNJJEDqbLTDbOrjRrHVTZxlguEowhxcgEVjRv6Jm8d2VYIag9kugIX_RI7vIqOFfSbR_WzktPJrBo7THvNzW_TbFpieNpK4IBHEFhjJUmHEX4n9VXKdKO1et5cr3l3khivkh3WrQKk6I22mW0eUPKy1FFW6JdVvRgNIAmPJynaouNnok1A6RGOt5MVIE8PFhLMdBpHihdQE__QfYrk50hAC_7JUs3kSZ9y4cBM7c"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">
+              Arthritis Management
+            </h3>
+          </div>
+          <!-- Item 3 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="a pair of soft wool slippers neatly placed on a sunlit wooden floor"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdXX4JNz04l2HHCyL-lJMspgfsjDKjrARMBoqnTsnKqlZe_9DlmYTgaX_-O40b1k048ROlHsCuHFMM15ifdwL4pWahSTkOdp-l9eJGRaaeSfdYGWJeH5kdTT6WVL5hdBkYtNGK2ICQ_hy4RB2ifrL1Yb62e8sIhOL8BOitQvmuR374klahhjfkFbsVAK9m0hyQHIB3OVCdMEX6bY7siLSBDLfys-qafWlXnrMyYdP60Fqc6fbn-5S7bh6f_KDxTUzI9cmhmKSNjJ4"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">
+              Post-Surgical Rehab
+            </h3>
+          </div>
+          <!-- Item 4 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="close-up of a stack of folded linen towels in muted earthen tones"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2oEZrWYk2hl4NnohSv4c9g3iBRYOFtH5T3q84byYuYQ2nnRXpmKREjRczrxG6g7nCij2_lbd4zJYGbNP8P43CX8Tn1b6P_hWVg6csonA2vL3iCym6Kp90fECLowbL3cZNNjxjoO1kGrxPzDny1a7Kwd97q07gS9w-iAIAeSUayv-cUn2oWoB26W7TkrI6XIpJzJn1c-7HiwlahhvM-LC9WMWIL71W_17MTdHp1iOY2xEGpEcZmp3oEZh5tp5Pn5xdISFrQ9qAOUY"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">Stroke Recovery</h3>
+          </div>
+          <!-- Item 5 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="a simple wooden chair silhouette against a warm morning light"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUG5WUGAQz8on0-b0aippDRhiUJnubwF6-621qfkITGb32bFR0FDFn-u2VYP2ZlpIOQmZOA9FUvHy8SLx_d_q1IvI-T2BApsYIung5FGtjwweOUeBV7c1FIQuVNQbzekZqCI3b4fTd_C9XOCegzSPqVUnnRrix3guANl0QSdoWYlBVQhUg5Bu0WRtpOs5QXRbRghbjAHjB8BoUjGxFA4W8FVnHFdIkWKWlr21hpQvkAV58EC7INU-yTyps5u-twK8L1UFsFpX5k94"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">Balance Training</h3>
+          </div>
+          <!-- Item 6 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="a blooming plant in a terracotta pot by a window"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtJ1EimGNSPcssjSU0R6KdnWFmP28C6dMyCcrm0P51PgipElHznaC9E-HSBQcKXags6ViENm12YuYWw-oS7a-9LW_Vc3E5s8ASN9F1k-GQfkAwuLXqz3cU2YwmzhgLjWrRBQLI8Mhrgexuv2OSQXoQIWHeLCvt37qi9zo2p-Ei7bsdPGDQF-fq-hmeo82ZlLjVj-XA3AMYIaY_youNLuAm7KNfBvU59saT_gc0zbAtLBjuZvC9fwNaVH7_suLWZFQ4L9MoiDIgbjA"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">
+              Breathing &amp; Wellness
+            </h3>
+          </div>
+          <!-- Item 7 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="close-up of a kitchen faucet handle and a warm wooden countertop"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAhGgeFqMHtXTol3fOgqJ8O0PRYsJyqAUY7HcG_W-TTSsBZJa1mCL1YmpP21LNjXaO-ygm9IM1HHClITSRBJ49tkY76cKQfLk6wzreDYsEaIoFtZpF9VMYJED5iJs7QigrzxkKALVPeE8GkNDqHlI3xWoEys6pYDuJg4rpckruRyv8UHnqUb3-UMBg0wVD6n2NzK6tRd7Pe5pI8K3h94y7XGGsRVWQFyX3EXQ7aTWxd-tZu9v3FhGOSXAcwRJ8RVIXgbeVeBCfXBw"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">
+              Home Safety Audits
+            </h3>
+          </div>
+          <!-- Item 8 -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="a soft pillow with a light indentation in a peaceful bedroom"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFqtsLQMPRqrJOB8GammLowe-f-7fUaXjkDS-6g8l9ueLacPk3Wt4e2idHvfFIPvKPOrVBnahoXXd6DBwI9MzV2CzPPMRCcem6AVonfFvduzABGqDPZ8RYNUTlzaSRqIBKA79tI_WCSphfh7c7eoQfVGKVgFKOfa-FDvBw1PyuGDzF4QbL1s4CrCFtU2sIMtZ1fSS4TI9zxqBmKaaCW73UgmWU43yqp0ql7G9UPtBbbNtJ_Bs2KgEa8lxMZRfMmU9auZR2664rLSc"
+              />
+            </div>
+            <h3 class="font-serif text-lg text-on-surface">Pain Relief</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5: How It Begins -->
+    <section class="py-32 px-12 bg-surface-container-low">
+      <div class="max-w-screen-2xl mx-auto">
+        <h2 class="font-display text-4xl mb-24 text-center">The Journey</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div class="relative pt-12">
+            <span
+              class="absolute top-0 left-0 font-display text-8xl text-secondary opacity-20"
+              >1</span
+            >
+            <h3 class="font-serif text-2xl mb-6">Say hello</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">
+              A simple WhatsApp message to discuss your situation. No pressure,
+              just an initial understanding of your home needs and goals.
+            </p>
+          </div>
+          <div class="relative pt-12">
+            <span
+              class="absolute top-0 left-0 font-display text-8xl text-secondary opacity-20"
+              >2</span
+            >
+            <h3 class="font-serif text-2xl mb-6">A first visit</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">
+              I visit your home to assess mobility, environment, and specific
+              challenges. We create a plan that fits into your existing layout
+              and life.
+            </p>
+          </div>
+          <div class="relative pt-12">
+            <span
+              class="absolute top-0 left-0 font-display text-8xl text-secondary opacity-20"
+              >3</span
+            >
+            <h3 class="font-serif text-2xl mb-6">A weekly rhythm</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">
+              We establish a gentle, consistent schedule of home sessions
+              focused on functional independence and sustainable progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 6: From the Notes -->
+    <section class="py-32 px-12 bg-surface">
+      <div
+        class="max-w-screen-2xl mx-auto border border-outline-variant/10 p-16 rounded-xl"
+      >
+        <div class="flex flex-col md:flex-row gap-16 items-center">
+          <div class="md:w-1/3 grid grid-cols-2 gap-4">
+            <img
+              class="aspect-square object-cover"
+              data-alt="close-up of a glass of water on a wooden tray with afternoon shadows"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34snIIwistAFKWM1VhJlK7gt5aqfqE3P6iehQqKWluYCXxt3JkE6z_SOHoS2l2Mo25c_eSPRKw9bw-CIV6SMVhb6tEmS9nCwAsdIqKjNB8JJbiQtNlS3OA2zc98Jv81RumpxFOZYYK-aK4gdFb1UmZGI6OYjJGdbVQMksqeT-tKIYmFdpFBNNwYDxui9Tv4LT6Rtv9igYHDESHlj2l7nd_xnfT7RvVWx_RMwsmeKEAAq5dtEpACBP-5SoBng4fAfQrSdtKKRWfVU"
+            />
+            <img
+              class="aspect-square object-cover mt-8"
+              data-alt="a simple reading lamp on a side table"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD07Wp9v_T2_ZK9-Qtaon2IUziI2ihgXCWAVx-rqUiuxHJJWBG111cCGoJjfPvnIrnm_Rv_kFY1mwN4AXsDQZlYxdaaToDgzUpIeNnPtCgf89mTjP-eE33qnSB90c5WB-xoSqHR64ZUcGHQ7Nr3vlmP1R1NuXz2D8rjlO8xFudaXLcgoul7u0c4YkWhq8kRkjXV_MnbXfhK_eGVsP0PPCWD2i6yfLNTZFPRbl7uhwu8jLdziduMKt6KKgnd3rsxA2H-fEbu9WLzEIM"
+            />
+            <img
+              class="aspect-square object-cover -mt-8"
+              data-alt="a stack of books on a wooden floor"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3X_WuLh3yySOLOBzz6O3nD3gzqirVfTolsW1-NUayGNUTIk9LBdIo7oWkUZ7zCb2TAS-RSmFXNjMZadhM52otnu2RAaeYEIs7fgc2g-yzCTleQxTC2Y9Wp4itF4MG-tbGPhnRqKWFYVoxQHF2X3RVW54dnWCa5BICdYQXyosg6xoTkyhswtzEFeV4IPYo8BLpoi1s9RNnFwaHvJMMUa-2oTjMAzDWrrbXPMwX0gmeI5nmvUaaeYUcvKxT-akmhYZsM-lBFAMK8Jg"
+            />
+            <img
+              class="aspect-square object-cover"
+              data-alt="close-up of a pair of reading glasses on a linen sheet"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD27us8EmOzUqFw-WEssCo_cUmyuC3_smlxeBpCzgdqYKdyRv5Wug9QcfppNc0D-hUk0l27gkM6E-HimzJtBBPz7vQyuuEtWmYM90BVg_yD06OAohFIT-oLTy9-j3A5HDvr7gEbo6lTjdsT8bfdLdSlr9YZ7HAzpSUSf3l6Av-5OH6hPQkY_UVAb5fSraOKw9LGy1T93rUMH50ccg2f1SF5tNSRi-2nXaVzj_VBAe6n_umlfsdJmfKLfbg9j1QtS4E2ESASj-lkTgo"
+            />
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="font-display text-4xl mb-8">From the Notes</h2>
+            <p
+              class="font-body text-xl text-on-surface-variant leading-relaxed mb-12 italic"
+            >
+              Observations on care, the architecture of the home, and the small
+              victories of daily movement.
+            </p>
+            <a
+              class="inline-flex items-center gap-4 text-primary font-medium uppercase tracking-[0.2em] text-sm group"
+              href="#"
+            >
+              Continue on Instagram
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                >trending_flat</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 7: WhatsApp CTA -->
+    <section class="bg-[#3a2c1b] py-32 px-12 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-20">
+        <img
+          class="w-full h-full object-cover"
+          data-alt="still-life photo of a vintage writing desk at night with a small warm desk lamp and an open journal"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXSpvSSKGe9hW6f2A3gJYsj5hskc39zFpYQrak67SH7EJUUYuBOtb_3wjcpL06kngM-nI9EDStZWfL7Tkk7nDKtT-6GjdgZ6smiOuSmjUhG20GyIN3uoDqvoJgA9OfEj7VE0X04RI5QAgAcAKquQNkbXNe8ODWGHM1QiVaLK9Docl8ow2bCcHF5L8V_vqUMCg9sDCiR7SnCl7QvG3Ka0hS7xmli08PSba59F7iZOxvR0rFF_FvuBmVia86u5yQYjCUJXEj_F5CC6g"
+        />
+      </div>
+      <div class="relative max-w-4xl mx-auto text-center">
+        <h2 class="font-display text-5xl md:text-6xl text-surface-bright mb-12">
+          The first step is one message.
+        </h2>
+        <button
+          class="bg-primary text-on-primary px-16 py-6 rounded-md text-sm font-medium tracking-[0.2em] uppercase hover:bg-primary-container transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl"
+        >
+          Start the conversation
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-[#fff8f0] w-full py-20 px-12 border-t border-stone-200/20"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-end w-full max-w-screen-2xl mx-auto gap-8"
+      >
+        <div class="flex flex-col gap-6">
+          <div class="font-serif text-3xl text-[#7a5738]">followme</div>
+          <p class="font-serif italic text-stone-700 max-w-sm">
+            With thanks to the rooms I have been let into.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8 items-end">
+          <nav class="flex flex-col gap-2 text-right">
+            <a
+              class="font-sans text-xs tracking-tighter text-stone-400 hover:opacity-70 transition-opacity"
+              href="#"
+              >跟 我 走 — walk with me</a
+            >
+            <a
+              class="font-sans text-xs tracking-tighter text-stone-400 hover:opacity-70 transition-opacity"
+              href="#"
+              >Instagram</a
+            >
+            <a
+              class="font-sans text-xs tracking-tighter text-stone-400 hover:opacity-70 transition-opacity"
+              href="#"
+              >Email</a
+            >
+            <a
+              class="underline decoration-[#972e1b] underline-offset-4 font-sans text-xs tracking-tighter text-stone-400 hover:opacity-70 transition-opacity"
+              href="#"
+              >WhatsApp</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div
+        class="max-w-screen-2xl mx-auto mt-12 pt-8 border-t border-stone-200/10"
+      >
+        <p class="text-[10px] uppercase tracking-widest text-stone-400">
+          © followme physiotherapy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
