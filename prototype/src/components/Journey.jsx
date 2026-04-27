@@ -30,7 +30,7 @@ export default function Journey() {
             <div key={step.title} className="relative pt-14 isolate">
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute top-0 left-0 z-0 font-display text-[88px] leading-none text-gold/70 tracking-tightest select-none"
+                className="pointer-events-none absolute top-0 left-0 z-0 font-display text-[88px] leading-none text-gold tracking-tightest select-none"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
