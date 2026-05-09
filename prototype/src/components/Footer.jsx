@@ -2,7 +2,7 @@ import PeakMark from "./PeakMark";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-ink-primary text-canvas overflow-hidden">
+    <footer className="relative overflow-hidden">
       <PeakMark
         className="absolute -bottom-6 right-[-6%] w-[55%] h-[120px] text-canvas/[0.05]"
         strokeWidth={0.6}
